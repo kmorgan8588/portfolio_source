@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(195, 218, 211);
+}
+
+
+#avatar {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  background: rgb(4, 94, 124);
+}
+
+.navigation ul {
+   list-style: none;
+ }
+
+.navigation a {
+   text-decoration: none;
+   display: block;
+   padding: 1em;
+   color: white;
+ }
+
+.navigation a:hover {
+   background: #1565C0;
+ }
+
+.navigation-left {
+  display: flex;
+  flex: 1, 1;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.navigation-right {
+  display: flex;
+  flex: 1, 1;
+  flex-flow: row wrap;
+  justify-content: end;
+}
+
+#container-2 {
+  max-width: 400px;
+  align-self: center;
+}
