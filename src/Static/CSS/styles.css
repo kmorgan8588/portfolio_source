@@ -1,6 +1,9 @@
 body {
   background-color: rgba(195, 218, 211, 0.2);
+  margin: 0;
+  padding-bottom: 60px;
 }
+
 
 
 #avatar {
@@ -45,10 +48,11 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    padding: 0;
 
     margin: 0;
     list-style: none;
-    background: rgba(179, 170, 192, 0.2)
+    background: rgb(46, 44, 48)
   }
 
   .footer-contact li {
@@ -57,6 +61,7 @@ body {
   }
   .footer-contact a {
     text-decoration: none;
+    color: white;
   }
 
   .footer-contact li:hover {
@@ -71,6 +76,9 @@ body {
 }
 
 @media all and (max-width: 500px) {
+  body {
+    padding-bottom: 100px;
+  }
   .navigation {
     flex-flow: column wrap;
     padding: 0;
