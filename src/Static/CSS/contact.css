@@ -1,0 +1,25 @@
+#contact {
+  text-align: left;
+}
+
+#contact p {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+form {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+textarea {
+  height: auto;
+  max-width: 700px;
+}
+
+
+@media all and (max-width: 500px) {
+  textarea {
+    max-width: 300px;
+  }
+}
