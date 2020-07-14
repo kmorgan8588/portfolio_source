@@ -27,7 +27,7 @@ body {
  }
 
  .navigation a:hover {
-    background: #1565C0;
+  background: #5ca4d4;
   }
 
   #container {
@@ -52,21 +52,44 @@ body {
   }
 
   .footer-contact li {
-    text-decoration: none;
     display: block;
     padding: 1em;
   }
+  .footer-contact a {
+    text-decoration: none;
+  }
 
   .footer-contact li:hover {
-    background: #1565C0;
+    background: #5ca4d4;
   }
 
 /* reducing screen size/ mobile*/
+@mediat all and (max-width: 800px) {
+  .footer-contact {
+    justify-content: space-around;
+  }
+}
 
 @media all and (max-width: 500px) {
   .navigation {
     flex-flow: column wrap;
     padding: 0;
+  }
+
+  .footer-contact {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .footer-contact li {
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid rgba(255,255,255, 0.3);
+    border-bottom: 1px solid rgba(0,0,0, 0,1);
+  }
+
+  .footer-contact li:last-of-type i {
+    border-bottom: none;
   }
 
   .navigation a {
@@ -79,5 +102,6 @@ body {
   .navigation li:last-of-type a {
     border-bottom: none;
   }
+
 }
 
