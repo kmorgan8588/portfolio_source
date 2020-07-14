@@ -2,11 +2,12 @@
  text-align: left;
 }
 
-#story h2 {
-  text-align: center;
-}
 
 #story p {
   margin-left: 20%;
   margin-right: 20%;
+}
+
+#story a, #story a:visited {
+  color: blue;
 }
