@@ -12,13 +12,12 @@ body {
 .navigation {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
+
+  list-style: none;
   margin: 0;
   background: rgb(4, 94, 124);
 }
-
-.navigation ul {
-   list-style: none;
- }
 
 .navigation a {
    text-decoration: none;
@@ -27,25 +26,39 @@ body {
    color: white;
  }
 
-.navigation a:hover {
-   background: #1565C0;
- }
+ .navigation a:hover {
+    background: #1565C0;
+  }
 
-.navigation-left {
-  display: flex;
-  flex: 1, 1;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
 }
 
-.navigation-right {
-  display: flex;
-  flex: 1, 1;
-  flex-flow: row wrap;
-  justify-content: end;
+@media all and (max-width: 500px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255, 0.3);
+    border-bottom: 1px solid rgba(0,0,0, 0,1);
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
 }
 
-#container-2 {
-  max-width: 400px;
+
+#container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
   align-self: center;
 }
