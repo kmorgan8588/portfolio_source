@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
-const mailer = require('nodemailer');
-const options = require('./Mailer/setupConfig');
+
 const Post = require('./Controllers/handleEmail');
 
 const app = express();
