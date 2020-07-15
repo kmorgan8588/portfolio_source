@@ -13,10 +13,10 @@ module.exports = handleEmail = (req, res) => {
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
       console.log(err);
-      //res.redirect(oops page)
+      res.redirect('/whoops.html');
     } else {
       console.log('Email sent: ', info.response);
-      res.redirect('/contact.html');
+      res.redirect('/success.html');
     }
   })
 
