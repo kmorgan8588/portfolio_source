@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Projects</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/work.css">
+</head>
+<body>
+  <div>
+    <ul class="navigation">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="work.html">PROJECTS</a></li>
+      <li><a href="contact.html">CONTACT ME</a></li>
+    </ul>
+  </div>
+
+  <div id="container">
+      <img id="avatar" src="https://kmorgan-portfolio-images.s3-us-west-2.amazonaws.com/profile.png" alt="Picture of Kyle Morgan with brick wall background" width="" height="">
+    </div>
+  <div>
+    <h1>Projects</h1>
+    <hr>
+    <ul class="projects">
+      <li id="project">
+        <h4>Zilhome</h4>
+        <a title="This is a link" target="_blank" href="https://github.com/1021s/Kyle-proxy"><img id="project-img" src="https://kmorgan-portfolio-images.s3-us-west-2.amazonaws.com/zilhomeProxy.jpg" height="" width=""></a>
+      <p>
+        <a title="This is a link" target="_blank" href="https://github.com/1021s/Kyle-proxy">Proxy</a>
+        <a title="This is a link" target="_blank" href="https://github.com/1021s/Kyle-service">Microservice</a>
+        <a title="This is a link" target="_blank" href="https://github.com/kmorgan8588/FEC">Remastered</a>
+      </p>
+      <p>
+        An open source home listing service.  The proxy page supports five mircorservices which populate the page with
+        all necessary information.  All mircorservices were built from the ground up using React.js, HTML, and CSS.  The
+        Servers are powered by Node.js and Express, with each micrcoservice being handled by a different server and database.
+        Check out the repos to see what I had a hand in.  The remastered version takes the Node/Express server and reinvisions
+        it in C# and the .NET framework.
+      </p>
+      <p>
+        Deployed with Docker to Amazon Web Services using EC2 instances.
+        <br>
+        Status: Currently not deployed
+      </p>
+    </li>
+      <li id="project">
+        <h4>Better Homes and Hackers</h4>
+        <a title="This is a link" target="_blank" href="https://github.com/1021sdc/Kyle-proxy"><img id="project-img" src="https://kmorgan-portfolio-images.s3-us-west-2.amazonaws.com/betterhomes.png" height="" width=""></a>
+        <p>
+          <a title="This is a link" target="_blank" href="https://github.com/1021sdc/Kyle-proxy">Proxy</a>
+          <a title="This is a link" target="_blank" href="https://github.com/1021sdc/better-info">Microservice</a>
+        </p>
+        <p>
+          An inherited code base project.  The primary effort was to revamp the backend infrastructure with an emphasis
+          on building out a scalable system during deployement.  All microservices were scaled individually and by hand
+          as a learning exercise in system design.
+        </p>
+        <p>
+          Deployed with Docker to Amazon Web Services using EC2 instances.
+          <br>
+          Structure:
+          <ul>
+            <li>Load Balancer - Nginx</li>
+            <li>Database - Postgres on one instance</li>
+            <li>Servers - Three Node/Express</li>
+            <li>Caching - not implemented before project time limit</li>
+            <li>Testing - Loader.io and NewRelic</li>
+          </ul>
+          <br>
+          Status: Currently not deployed
+        </p>
+      </li>
+        <li id="project">
+          <h4>Dice Dice Baby</h4>
+          <a title="This is a link" target="_blank" href="https://github.com/kmorgan8588"><img id="project-img" src="https://kmorgan-portfolio-images.s3-us-west-2.amazonaws.com/dicedicebaby.jpg" height="" width=""></a>
+          <p>
+            Project is currently private, checkout my Github for more.
+          </p>
+          <p>
+            A dice rolling application built from the ground up using React.js with Material UI.  Allows the user to select
+             from various types of dice to roll.  With a persistent rolling history, powered by MongoDB/Mongoose, with the option to turn back
+            time and re-roll for a *hopefully* better result from directly in the history.
+            <br>
+            Status: Currently not deployed
+          </p>
+        </li>
+    </ul>
+  </div>
+</body>
+<footer>
+  <ul class="footer-contact">
+    <li><i style="font-size:24px; color:cornsilk" class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/kmorgan8588"> Github</a></li>
+    <li><i style="font-size:24px; color:rgb(39, 111, 206)" class="fa fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/kyle-morgan-a36b89a5/"> LinkedIn</a></li>
+    <li><i style="font-size:24px; color:cornsilk"  class="fa fa-envelope-o" aria-hidden="true"></i><a href="contact.html"> Email</a></li>
+  </ul>
+</footer>
+</html>

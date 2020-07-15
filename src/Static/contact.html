@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome</title>
-  <link rel="stylesheet" href="CSS/styles.css">
-  <link rel="stylesheet" href="CSS/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Contact me</title>
+  <link rel="stylesheet" href="CSS/contact.css">
+  <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
   <div>
@@ -21,17 +21,25 @@
   <div id="container">
       <img id="avatar" src="https://kmorgan-portfolio-images.s3-us-west-2.amazonaws.com/profile.png" alt="Picture of Kyle Morgan with brick wall background" width="" height="">
     </div>
-  <div id="content">
-    <h1>Welcome!</h1>
+  <div id="contact">
+    <h1>Contact Me</h1>
     <hr>
-    <p>Hello world travelers!</p>
-    <p>My name is Kyle Morgan and you've found your way to my portfolio website.  Thanks for stopping by.  Check out my About section to find out more about yours truly.
-        If it's the code you're here for, check out my Project section or click on my Github profile in the footer section of any page.  If you'd like to contact me on social media,
-        checkout the link to my LinkedIn profile.  If email is your game, I've got the email button and the Contact Me section to fire off a message via the server running this application.</p>
-        <p>
-          If you're interested in viewing the source code, or you noticed something that needs to be fixed,
-          <a target="_blank" href="https://github.com/kmorgan8588/portfolio_source">here</a> is the direct link to this github repo for this site.
-        </p>
+    <p>If you'd like to send me a message and you're lazy like me, feel free to use this page!  Fill out the form with your information
+      and it'll send an email to me!  If you'd prefer to reach me using your favorite email application, my gmail is:
+      <strong>kmorgan8588@gmail.com</strong>.  If social media is your game, then check out the LinkedIn icon in the footer to connect with me there!
+    </p>
+    <div class="form-style">
+      <form method="POST" action="/email" autocomplete="off">
+      <fieldset>
+      <legend>Email Info</legend>
+      <input type="text" name="name" placeholder="Your Name *" required>
+      <input type="text" name="subject" placeholder="Subject *" required>
+      <input type="email" name="email" placeholder="Your Email *" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      </fieldset>
+      <input type="submit" value="Send" />
+      </form>
+      </div>
   </div>
 </body>
 <footer>

@@ -1,0 +1,124 @@
+body {
+  background-color: rgba(195, 218, 211, 0.2);
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+hr {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+#avatar {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+/* Full size */
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  list-style: none;
+  margin: 0;
+  background: rgb(4, 94, 124);
+}
+
+.navigation a {
+   text-decoration: none;
+   display: block;
+   padding: 1em;
+   color: white;
+ }
+
+ .navigation a:hover {
+  background: #5ca4d4;
+  }
+
+  #container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    align-self: center;
+  }
+
+  .footer-contact {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+
+    margin: 0;
+    list-style: none;
+    background: rgb(46, 44, 48)
+  }
+
+  .footer-contact li {
+    display: block;
+    padding: 1em;
+  }
+  .footer-contact a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer-contact li:hover {
+    background: #5ca4d4;
+  }
+
+/* reducing screen size/ mobile*/
+@mediat all and (max-width: 800px) {
+  .footer-contact {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 500px) {
+  body {
+    padding-bottom: 100px;
+  }
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .footer-contact {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .footer-contact li {
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid rgba(255,255,255, 0.3);
+    border-bottom: 1px solid rgba(0,0,0, 0,1);
+  }
+
+  .footer-contact li:last-of-type i {
+    border-bottom: none;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255, 0.3);
+    border-bottom: 1px solid rgba(0,0,0, 0,1);
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+}
+
