@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/Server/index.js",
+    "dev-server": "nodemon src/Server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/kmorgan8588/portfolio_source#readme",
   "devDependencies": {
     "eslint": "^7.4.0",
+    "nodemon": "^2.0.4",
     "prettier": "^2.0.5"
   },
   "dependencies": {
