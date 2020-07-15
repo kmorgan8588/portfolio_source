@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 
-const Post = require('./Controllers/handleEmail');
+const Post = require('./Controllers/postEmail');
 
 const app = express();
 
