@@ -1,0 +1,6 @@
+.editorconfig
+.eslintrc.json
+DockerFile
+package-lock.json
+prettierrc.json
+node_modules/
