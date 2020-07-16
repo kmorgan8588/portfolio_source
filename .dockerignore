@@ -4,3 +4,6 @@ DockerFile
 package-lock.json
 prettierrc.json
 node_modules/
+mockConfig.js
+DockerFile.fake
+DockerFile
