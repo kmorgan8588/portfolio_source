@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const USER = process.env.USER;
 const PASS = process.env.PASS;
 
