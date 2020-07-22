@@ -1,5 +1,5 @@
 # What image do you want to start building on?
-FROM alpine:latest
+FROM node:10.17.0-alpine
 
 ARG USER_ARG='email'
 ARG PASS_ARG='password'
