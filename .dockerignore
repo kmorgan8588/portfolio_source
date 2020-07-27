@@ -1,0 +1,8 @@
+.editorconfig
+.eslintrc.json
+package-lock.json
+prettierrc.json
+node_modules/
+mockConfig.js
+Dockerfile.fake
+Dockerfile
