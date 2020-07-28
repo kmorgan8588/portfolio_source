@@ -10,13 +10,13 @@ This is a living document, I am adding and making changes currently.
 
 # Phase 1
 
-Build the basic front end structure using plain HTML and CSS
-My server handles one POST route for my email API.
+- Build the basic front end structure using plain HTML and CSS
+- My server handles one POST route for my email API.
 
 # Phase 2
 
-Refactor to React and use react-router to handle correct browser history to follow best practices
-Use hooks for email form management.  This isn't much state to track in general so the goal is to keep things clean and seperate my concerns well.
+- Refactor to React and use react-router to handle correct browser history to follow best practices
+- Use hooks for email form management.  This isn't much state to track in general so the goal is to keep things clean and seperate my concerns well.
 
 # Phase 3
 
