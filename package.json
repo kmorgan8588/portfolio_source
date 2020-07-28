@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/Server/index.js",
     "dev-server": "nodemon src/Server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "dev-react": "webpack -d -w src/App/index.js"
   },
   "repository": {
     "type": "git",
