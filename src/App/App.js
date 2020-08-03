@@ -1,15 +1,17 @@
 import React from 'react';
-import NavBar from './components/NavBar';
 import {BrowserRouter as Switch, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import Profile from './components/Profile';
+import Home from './components/Home';
 
 const App = (props) => (
   <div>
     <NavBar />
-    {/* <Profile /> */}
+    <Profile />
 
     <Switch>
       <Route exact path="/">
-        {/* <Home /> */}
+        <Home />
       </Route>
       <Route path="/about">
         {/* <About /> */}

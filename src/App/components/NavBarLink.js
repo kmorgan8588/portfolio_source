@@ -7,10 +7,10 @@ const NavBarLink = (props) => {
 
   linkName === "Home" ? linkDestination = '/' : linkDestination = linkName;
   return (
-    <div>
+    <div className="navigation-link">
       <Link to={linkDestination}>{linkName}</Link>
       </div>
-  )
+  );
 }
 
 

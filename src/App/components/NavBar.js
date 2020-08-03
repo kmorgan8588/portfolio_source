@@ -5,7 +5,7 @@ import NavBarLink from './NavBarLink';
 const links = ["Home", "About", "Projects", "Contact"];
 
 const NavBar = (props) => (
-  <div>
+  <div className="navigation">
     <Router>
       {links.map((linkName, index) => <NavBarLink linkName={linkName} key={index}/>)}
     </Router>
