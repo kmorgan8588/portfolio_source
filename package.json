@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/Server/index.js",
     "dev-server": "nodemon src/Server/index.js",
-    "test": "jest",
+    "test": "jest --verbose",
     "dev-react": "webpack -d -w src/App/index.js"
   },
   "repository": {
@@ -43,6 +43,7 @@
     "express": "^4.17.1",
     "nodemailer": "^6.4.10",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   }
 }
