@@ -3,3 +3,4 @@ package-lock.json
 # setupConfig.js
 Dockerfile
 .env
+src/Static/bundle.js
