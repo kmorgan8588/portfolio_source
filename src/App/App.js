@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import About from './components/About';
+import Contact from './components/Contact';
 
 const App = (props) => (
   <div>
@@ -17,10 +18,7 @@ const App = (props) => (
       <Route exact path="/" component={Home} exact />
       <Route path="/About" component={About} />
       <Route path="/Projects" component={Projects} />
-      <Route path="/Contact">
-        {/* <Contact /> */}
-        <div>Send email</div>
-      </Route>
+      <Route path="/Contact" component={Contact}/>
     </Switch>
     <Footer />
     </Router>

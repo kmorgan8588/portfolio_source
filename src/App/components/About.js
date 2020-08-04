@@ -27,7 +27,7 @@ const About = (props) => (
         on some form of Xbox since they released, nearly 19 years ago.  My Switch definitely gets plenty of love as well.
       </p>
       <p>
-        I moved to Seattle about 2 and half years ago and I recently got engaged to my partner aboard the
+        I moved to Seattle about two and half years ago and I recently got engaged to my partner aboard the
         Millennium Falcon at DisneyWorld pre-COVID.  I'm excited to spend the rest of my life with someone so awesome!
       </p>
   </div>
