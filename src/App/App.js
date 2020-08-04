@@ -4,6 +4,8 @@ import NavBar from './components/NavBar';
 import Profile from './components/Profile';
 import Home from './components/Home';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
+import About from './components/About';
 
 const App = (props) => (
   <div>
@@ -13,14 +15,14 @@ const App = (props) => (
 
     <Switch>
       <Route exact path="/" component={Home} exact />
-      <Route path="/About"  />
+      <Route path="/About" component={About} />
       <Route path="/Projects" component={Projects} />
       <Route path="/Contact">
         {/* <Contact /> */}
         <div>Send email</div>
       </Route>
     </Switch>
-    {/* <Footer /> */}
+    <Footer />
     </Router>
   </div>
 );
