@@ -9,8 +9,8 @@ const Projects = (props) => (<div>
       <a title="This is a link" target="_blank" href="https://github.com/1021s/Kyle-proxy">
       <img id="project-img" src="https://kmorgan-portfolio-images.s3-us-west-2.amazonaws.com/zilhomeProxy.jpg" height="" width=""/></a>
     <p>
-      <a title="This is a link" target="_blank" href="https://github.com/1021s/Kyle-proxy">Proxy</a>
-      <a title="This is a link" target="_blank" href="https://github.com/1021s/Kyle-service">Microservice</a>
+      <a title="This is a link" target="_blank" href="https://github.com/1021s/Kyle-proxy">Proxy</a> {' '}
+      <a title="This is a link" target="_blank" href="https://github.com/1021s/Kyle-service">Microservice</a> {' '}
       <a title="This is a link" target="_blank" href="https://github.com/kmorgan8588/FEC">Remastered</a>
     </p>
     <p>
@@ -29,7 +29,7 @@ const Projects = (props) => (<div>
       <a title="This is a link" target="_blank" href="https://github.com/1021sdc/Kyle-proxy">
       <img id="project-img" src="https://kmorgan-portfolio-images.s3-us-west-2.amazonaws.com/betterhomes.png" height="" width=""/></a>
       <p>
-        <a title="This is a link" target="_blank" href="https://github.com/1021sdc/Kyle-proxy">Proxy</a>
+        <a title="This is a link" target="_blank" href="https://github.com/1021sdc/Kyle-proxy">Proxy</a> {' '}
         <a title="This is a link" target="_blank" href="https://github.com/1021sdc/better-info">Microservice</a>
       </p>
       <p>
