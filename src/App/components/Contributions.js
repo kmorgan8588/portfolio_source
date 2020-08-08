@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Contributions = (props) => {
-  return null;
+  return (
+    <div>
+      ...construction in progress
+    </div>
+  );
 }
 
 export default Contributions;

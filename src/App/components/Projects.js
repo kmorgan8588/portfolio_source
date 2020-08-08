@@ -9,7 +9,7 @@ const Projects = (props) => {
   return (<div>
     <h1>Projects</h1>
     <hr/>
-    <ul>
+    <ul className="project-contribution">
       <li>
         <Link to={url}>Projects</Link>
       </li>

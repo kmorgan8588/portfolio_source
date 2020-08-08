@@ -5,10 +5,10 @@ const NavBarLink = (props) => {
   const { linkName } = props;
   let linkDestination;
 
-  linkName === "Home" ? linkDestination = '/' : linkDestination = linkName;
+  linkName === "Home" ? linkDestination = '' : linkDestination = linkName;
   return (
     <div>
-      <Link to={linkDestination} className="navigation-link">{linkName}</Link>
+      <Link to={`/${linkDestination}`} id="navigation-link">{linkName}</Link>
       </div>
   );
 }
