@@ -4,6 +4,14 @@ const About = (props) => (
   <div id="content">
   <h1>About</h1>
     <hr/>
+    <h3>TLDR</h3>
+    <ul>
+      <li>I'm a full stack software engineer</li>
+      <li>I enjoy problem solving and long walks on the beach</li>
+      <li>I play Ultimate, DnD, and video games</li>
+      <li>I live in Seattle</li>
+    </ul>
+    <br/>
       <p>
         I've always been interested in the world of science fiction, and we all are fortunate to live in
         a time where innovation is turning fiction into fact. Being on the forefront of technology means being
