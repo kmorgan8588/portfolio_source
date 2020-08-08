@@ -10,7 +10,8 @@ app.use(express.static(path.resolve(__dirname, "..", "Static"), {dotfiles: "allo
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
-
+app.route('/*')
+  .get((req, res) => res.sendFile(path.join(__dirname, "..", "Static", "index.html")))
 
 app.route('/email')
   .post(Post);

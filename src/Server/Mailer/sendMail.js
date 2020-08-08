@@ -1,14 +1,11 @@
 const transporter = require('./transport');
 
-
 module.exports = sendMail = (mailOptions, res) => {
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
-      console.log(err);
-      res.redirect('/whoops.html');
+      res.status(500).json('fail');
     } else {
-      console.log('Email sent: ', info.response);
-      res.redirect('/success.html');
+      res.status(200).json('success');
     }
   })
-}
+};
