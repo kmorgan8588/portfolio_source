@@ -1,18 +1,29 @@
 import React from 'react';
 import useForm from '../Hooks/useForm';
+import postEmail from '../Util/postEmail';
 
 
 const ContactForm = (props) => {
-  const { view } = props;
-  const log = () => {
-    console.log(values);
-    reset();
+  const { success, fail } = props;
+
+  const handleSend = () => {
+    postEmail('/email', values)
+    .then(message => {
+      if (message === 'fail') {
+        throw new Error(message);
+      }
+      return;
+    })
+    .then(() => success())
+    .then(() => reset())
+    .catch(err => {
+      fail()
+    })
   }
-  const { values, handleSubmit, handleChange, reset } = useForm(log);
 
+  const { values, handleSubmit, handleChange, reset } = useForm(handleSend);
 
-
-   return view === 'form' ? (
+   return (
    <div className="form-style">
       <form onSubmit={handleSubmit}>
         <fieldset>
@@ -24,7 +35,7 @@ const ContactForm = (props) => {
       </fieldset>
       <input type="submit" value="Send" />
       </form>
-      </div>) : null;
+      </div>);
 };
 
 export default ContactForm;
