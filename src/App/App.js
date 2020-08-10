@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/Contact';
+import Missing from './components/Missing';
 
 const App = (props) => (
   <div>
@@ -19,6 +20,7 @@ const App = (props) => (
       <Route path="/About" component={About} />
       <Route path="/Projects" component={Projects} />
       <Route path="/Contact" component={Contact}/>
+      <Route path="*" component={Missing} />
     </Switch>
     <Footer />
     </Router>
