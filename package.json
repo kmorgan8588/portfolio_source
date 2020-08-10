@@ -7,7 +7,8 @@
     "start": "node src/Server/index.js",
     "dev-server": "nodemon src/Server/index.js",
     "test": "jest --verbose",
-    "dev-react": "webpack -d -w src/App/index.js"
+    "dev-react": "webpack -d -w src/App/index.js",
+    "build": "webpack src/App/index.js"
   },
   "repository": {
     "type": "git",
