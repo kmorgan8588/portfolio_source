@@ -1,8 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Contributions = (props) => {
   return (
     <div>
+    <h1>Contributions</h1>
+    <hr/>
+    <ul className="project-contribution">
+      <li>
+        <Link to='/Projects'>View Projects</Link>
+      </li>
+    </ul>
       <h3>Volunteering</h3>
       <p>
         I'm currently volunteering for Washington's Conviction Vacation project.  They aren't in a development phase,

@@ -2,7 +2,7 @@ body {
   background-color: rgba(195, 218, 211, 0.2);
   margin: 0;
   padding-bottom: 60px;
-  font-family: courier, arial, helvetica;
+  font-family: 'Roboto', arial, sans-serif;
 }
 a, a:visited {
   color: blue;
